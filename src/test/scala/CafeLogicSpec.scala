@@ -88,10 +88,10 @@ class CafeLogicSpec extends AnyWordSpec with Matchers {
 
   "generateBill" should {
     "apply discount and generate correct bill" in {
-      //drink - 3.25
-      //burger - 15.00
-      //total - 18.25
-      cafeLogic.generateBill(drinkAndPremiumItemOrder, discountCardCustomer) shouldBe BigDecimal(22.81) // 10% discount applied before service charge
+      //drink(3.25) + burger(15.00) = 18.25
+      //(18.25 - discount(1.86)) + service charge(4.56) = 20.95
+      //BUG FOUND!!!! It isn't subtracting the discount... My testing isn't helping me identify the problem currently...
+      cafeLogic.generateBill(drinkAndPremiumItemOrder, discountCardCustomer) shouldBe BigDecimal(20.95) // 10% discount applied before service charge
     }
   }
 

@@ -11,7 +11,6 @@ class MenuSpec  extends AnyWordSpec with Matchers {
     val updatedMenu = menu.addPremiumSpecial(pasta)
 
     updatedMenu.menuItem should contain(pasta)
-//    updatedMenu.menuItem should have size 3
     updatedMenu.menuItem.length shouldBe 3
   }
 
@@ -20,7 +19,7 @@ class MenuSpec  extends AnyWordSpec with Matchers {
     val updatedMenu = menu.removePremiumSpecial("Truffle Pasta")
 
     updatedMenu.menuItem should not contain pasta
-    updatedMenu.menuItem should have size 2
+    updatedMenu.menuItem should have size 2 //alternate way to writing it instead of .length
   }
 
 }

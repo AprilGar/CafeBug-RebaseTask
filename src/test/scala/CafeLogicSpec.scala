@@ -44,7 +44,7 @@ class CafeLogicSpec extends AnyWordSpec with Matchers {
   "place order" should {
     "place an order if stock is available and reduce the stock count" in {
       val result = cafeLogic.placeOrder(stock, drinkAndColdFoodOrder)
-      val expectedResult =  Right(StockLevel(Map(
+      val expectedResult = Right(StockLevel(Map(
         coffee -> 9,
         icedTea -> 3,
         sandwich -> 16,
@@ -91,7 +91,8 @@ class CafeLogicSpec extends AnyWordSpec with Matchers {
       //drink(3.25) + burger(15.00) = 18.25
       //(18.25 - discount(1.86)) + service charge(4.56) = 20.95
       //BUG FOUND!!!! It isn't subtracting the discount... My testing isn't helping me identify the problem currently...
-      cafeLogic.generateBill(drinkAndPremiumItemOrder, discountCardCustomer) shouldBe BigDecimal(20.95) // 10% discount applied before service charge
+      cafeLogic.generateBill(drinkAndPremiumItemOrder, discountCardCustomer) shouldBe BigDecimal(20.95) // What should be happening...?
+      // 10% discount should be applied on the order before service charge. Service charge should take the full order total.
     }
   }
 

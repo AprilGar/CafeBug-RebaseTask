@@ -1,0 +1,36 @@
+# Café: Coverage report task
+
+First of all, let's recap what the coverage report tells us:
+
+- **Element** – This lists the classes, objects, and traits in your Scala project that are being analysed for code coverage.
+
+- **Class, %** – The percentage of classes that have been at least partially executed during tests. The fraction shows how
+  many classes are covered versus the total.
+
+- **Method, %** – The percentage of methods that were executed at least once during tests. The fraction shows how many
+  methods were covered versus the total.
+
+- **Line, %** – The percentage of lines of code that were executed at least once by tests. The fraction indicates how many
+  lines were covered versus the total.
+
+- **Branch, %** – The percentage of branching paths (like if-else conditions or pattern matching cases) that were executed
+  during tests. This is useful for assessing logic coverage beyond just what code was executed. This is the one we should be looking at as we want to make sure that all the possible routes are tested! 
+
+#### This café code isn't quite up to scratch.
+
+1. We have a lower test coverage than ideal.
+2. We have a bug being detected around the discount being applied but our current tests aren't helping in identifying
+   the problem.
+
+## MVP
+
+1. Spend time understanding the logic and the code base.
+2. Run a coverage report to see where we are currently lacking.
+3. Write tests to increase the coverage of the **Class, %** to a minimum of 90%.
+4. Write tests to increase the coverage of the **Branch, %** to a minimum of 50%. 
+5. Using both yours and existing tests to identify where the bug might be coming from. 
+6. Fix the code and make the tests pass. 
+
+## EXTENSION 
+1. The LoyaltyCardLogic isn't quite right.... find the problem according the `Original Café Instructions`, test it and fix it.  
+2. Has your testing identified any other bugs or incorrect logic? If so, make a record of it in a commit as identified and then fix it! 

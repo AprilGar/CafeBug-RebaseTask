@@ -18,4 +18,4 @@ case object ColdFood extends ItemCategory
 
 case object PremiumMeal extends ItemCategory
 
-//make a new case object!!
+case object Extras extends ItemCategory

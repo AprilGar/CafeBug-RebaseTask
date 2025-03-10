@@ -21,3 +21,5 @@ case object PremiumMeal extends ItemCategory
 case object Seafood extends ItemCategory
 
 case object Extras extends ItemCategory
+
+case object SweetTreat extends ItemCategory

@@ -25,3 +25,4 @@ case object PastryItem extends ItemCategory
 case object SeaFood extends ItemCategory
 
 case object SideOrder extends ItemCategory
+case object SpicyFood extends ItemCategory

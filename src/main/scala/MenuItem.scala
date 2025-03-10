@@ -22,4 +22,6 @@ case object Sand extends ItemCategory
 
 case object PastryItem extends ItemCategory
 
+case object SeaFood extends ItemCategory
+
 case object SideOrder extends ItemCategory

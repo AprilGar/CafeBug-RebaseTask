@@ -21,16 +21,18 @@ First of all, let's recap what the coverage report tells us:
 1. We have a lower test coverage than ideal.
 2. We have a bug being detected around the discount being applied but our current tests aren't helping in identifying
    the problem.
+3. We are not convinced the developer has met the client requirements. 
 
 ## MVP
 
 1. Spend time understanding the logic and the code base.
 2. Run a coverage report to see where we are currently lacking.
 3. Write tests to increase the coverage of the **Class, %** to a minimum of 90%.
-4. Write tests to increase the coverage of the **Branch, %** to a minimum of 50%. 
-5. Using both yours and existing tests to identify where the bug might be coming from. 
+4. Write tests to increase the coverage of the **Branch, %** to a minimum of 60%. 
+5. Using both yours and existing tests, identify where the bug might be coming from. 
 6. Fix the code and make the tests pass. 
 
 ## EXTENSION 
-1. The LoyaltyCardLogic isn't quite right.... find the problem according the `Original Café Instructions`, test it and fix it.  
-2. Has your testing identified any other bugs or incorrect logic? If so, make a record of it in a commit as identified and then fix it! 
+1. The LoyaltyCardLogic isn't quite right.... find the problem according the `Original Café Instructions`, test it and fix it.
+2. Continuing on from above, compare the given code base against the client requirements (`Original Café Instructions MVP`). What is missing? Use TDD to complete.
+3. Has your testing identified any other bugs or incorrect logic? If so, make a record of it in a commit as identified and then fix it! 

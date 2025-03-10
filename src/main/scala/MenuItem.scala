@@ -18,6 +18,8 @@ case object ColdFood extends ItemCategory
 
 case object PremiumMeal extends ItemCategory
 
+case object Sand extends ItemCategory
+
 case object PastryItem extends ItemCategory
 
 case object SideOrder extends ItemCategory

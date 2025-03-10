@@ -17,9 +17,3 @@ case object HotFood extends ItemCategory
 case object ColdFood extends ItemCategory
 
 case object PremiumMeal extends ItemCategory
-
-case object Extras extends ItemCategory
-
-case object Sweets extends ItemCategory
-
-case object AlcoholicDrink extends ItemCategory
